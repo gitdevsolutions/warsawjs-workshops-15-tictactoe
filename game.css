@@ -1,40 +1,47 @@
 * {
-    box-sizing: border-box;
-    background-color: lightgreen;
+  box-sizing: border-box;
+  background-color: lightgreen;
 }
 h1,
 #round-info {
-	text-align: center;
+  text-align: center;
 }
 
 #round-info {
-	color: #d6d6d6;
+  color: #d6d6d6;
 }
 
 .board {
-	height: 300px;
-	width: 300px;
-	margin: 0 auto;
-	font-size: 0;
+  height: 300px;
+  width: 300px;
+  margin: 0 auto;
+  font-size: 0;
 }
 
 .board div {
-	height: 100px;
-	width: 100px;
-	display: inline-block;
-	border: 2px solid black;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  border: 2px solid black;
 }
 
 .red {
-	background-color: crimson;
+  background-color: crimson;
 }
 
 .blue {
-	background-color: cornflowerblue;
+  background-color: cornflowerblue;
 }
 #reset-score {
-	background-color: rgb(13, 228, 24);
-	padding: 7px 10px;
-	border: 2px solid rgb(15, 1, 1);border-radius:25; 
-	text-transform: uppercase;
+  background-color: rgb(13, 228, 24);
+  padding: 7px 10px;
+  border: 2px solid rgb(15, 1, 1);
+  border-radius: 25;
+  text-transform: uppercase;
+}
+button {
+  background-color: #fff;
+  padding: 7px 10px;
+  border: 1px solid #ccc;
+  text-transform: uppercase;
 }
