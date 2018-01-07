@@ -1,15 +1,27 @@
 document.addEventListener('DOMContentLoaded',function(){
-    //inicjalizacja gry
+   
+    var playerClasses ={
+        'playerA': 'red',
+        'playerB': 'blue'
+    };
+    var currentPlayer;
+
 initGame();
 function initGame(){
-    //znajduje wszystkie divy-robi je klikalne
+   
     var fields = document.querySelectorAll('.board > div');
-    //dla kazdego pola dodaje funkcje po kliknieciu
+    currentPlayer = 'playerA';
+   
     fields.forEach(field => field.addEventListener('click',filedClickHandler));
+   
 }
 function filedClickHandler(){
-    //drukuje Hello w konsoli
-    console.log("Hello",this);
+   var playerClass = playerClasses[currentPlayer];
+   this.classList.add(playerClass);
+   currentPlayer =currentPlayer === 'playerA' ? 'playerB': 'playerA';
+   this.removeEventListener('click',filedClickHandler);
+   
+   
 }
 
 });
