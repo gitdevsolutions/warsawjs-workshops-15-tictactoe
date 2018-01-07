@@ -1,5 +1,14 @@
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: lightgreen;
+}
+h1,
+#round-info {
+	text-align: center;
+}
+
+#round-info {
+	color: #d6d6d6;
 }
 
 .board {
@@ -13,7 +22,7 @@
 	height: 100px;
 	width: 100px;
 	display: inline-block;
-	border: 1px solid darkgrey;
+	border: 2px solid black;
 }
 
 .red {
@@ -22,4 +31,10 @@
 
 .blue {
 	background-color: cornflowerblue;
+}
+#reset-score {
+	background-color: rgb(13, 228, 24);
+	padding: 7px 10px;
+	border: 2px solid rgb(15, 1, 1);border-radius:25; 
+	text-transform: uppercase;
 }
