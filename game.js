@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
     currentPlayer = "playerA";
     emptyFields = 9;
     fields.forEach(field => field.addEventListener("click", fieldClickHandler));
+    fields.forEach(field => field.removeAttribute('class'));
   }
 
   function fieldClickHandler() {
